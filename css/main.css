@@ -246,7 +246,7 @@ hr{
 }
 
 .card{
-    background-color: rgb(28, 40, 61);
+    background-color: #0c0e1b;
     width: 250px;
     height: 200px;
     text-align: center;
@@ -267,6 +267,7 @@ hr{
 .price{
     font-family: "Roboto";
     color: orange;
+    position: relative;
 }
 
 .textoverlay{

@@ -53,16 +53,16 @@ ul{
 }
 
 #navbar a{
-    font-size: 13.5px;
-    height: 50%;
+    font-size: clamp(10px, 2.5vw, 13.5px);
+    height: 65%;
     display: flex;
     border: none;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color:#ecf0f1;
+    color: #ecf0f1;
     margin-top: 9px;
-    padding: 3px 13px;
+    padding: 3px clamp(5px, 1.5vw, 13px);
     transition: all 0.3s ease;
     border-radius: 5px;
     position: relative;
