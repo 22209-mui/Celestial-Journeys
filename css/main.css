@@ -292,17 +292,26 @@ hr{
     font-size: clamp(10px, 2.5vw, 14px);
 }
 
-.carousel-inner {
-    padding: 1em;
-  }
+.carousel {
+    position: relative;
+    width: 530px;
+    margin: 0 auto;
+}
 
-  @media (min-width: 768px) {
-    .carousel-item {
-      margin-right: 0;
-      flex: 0 0 33.333333%;
-      display: block;
-    }
-    .carousel-inner {
-      display: flex;
-    }
-  }
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+#carouselimage{
+    border-radius: 5px;
+}
+
