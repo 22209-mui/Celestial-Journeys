@@ -31,7 +31,7 @@ body {
     font-family: "Roboto";
     background-color: rgb(26, 37, 58);
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 20px;
     display: flex;
     height: 50px;
@@ -76,7 +76,7 @@ ul {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #ecf0f1;
+    color: white;
     padding: 6px clamp(5px, 1.5vw, 13px);
     transition: all 0.3s ease;
     border-radius: 5px;
@@ -84,7 +84,7 @@ ul {
 }
 
 #navbar a:hover {
-    color: rgb(182, 176, 176);
+    color: rgb(200, 200, 200);
 }
 
 #navbar a.active {
@@ -99,7 +99,7 @@ ul {
     border: none;
     cursor: pointer;
     padding: 6px;
-    margin-left: 12px;
+    margin-left: auto;
     flex-shrink: 0;
 }
 
@@ -207,42 +207,6 @@ strong {
     height: 45px;
     width: clamp(150px, 20vw, 200px);
     margin: 30px auto 0 auto;
-    display: flex;
-    justify-content: center;
-    font-size: clamp(12px, 2.5vw, 15px);
-}
-
-.journey {
-    margin-top: 12px;
-}
-
-.plane {
-    margin-right: 10px;
-    margin-top: 9px;
-    width: 30px;
-    height: 30px;
-}
-
-.gem {
-    margin-right: 10px;
-    margin-top: 9px;
-    width: 30px;
-    height: 30px;
-}
-
-.gems{
-    margin-top: 12px;
-}
-
-.round2 {
-    font-family: "Roboto";
-    color: #ecf0f1;
-    background-color: #1d293d;
-    box-shadow: 0 0 3px rgb(160, 137, 137);
-    border-radius: 40px;
-    height: 45px;
-    width: clamp(150px, 20vw, 200px);
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     font-size: clamp(12px, 2.5vw, 15px);
@@ -424,7 +388,6 @@ hr{
     font-size: clamp(18px, 4vw, 26px);
     font-weight: 300;
     letter-spacing: 3px;
-    text-transform: uppercase;
     background-image: linear-gradient(to right, #cc1818, #fffb00);
     background-clip: text;
     -webkit-background-clip: text;
@@ -437,7 +400,6 @@ hr{
     font-family: "Roboto";
     font-size: clamp(10px, 2vw, 13px);
     letter-spacing: 2px;
-    text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
     margin: 4px 0 0 0;
 }
@@ -448,3 +410,4 @@ hr{
 .carousel-indicators li {
     background-color: rgba(255, 166, 0, 0.4);
 }
+

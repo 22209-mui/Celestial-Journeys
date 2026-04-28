@@ -1,265 +1,168 @@
-body{
-    background:
-    linear-gradient(180deg, #140e15, #091124);
-    min-height: 100vh;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
-h1{
-    text-align: center;
-    font-family: "Roboto";
-    background:
-        linear-gradient(90deg, rgb(233, 218, 8), rgb(248, 91, 0));
-    -webkit-background-clip: text;  
-    color:transparent;
-    font-family: "Times New Roman";
-    font-size: 50px;
-    font-weight: 300;
-}
-#description, .start{
-    color: #e47112;
-    font-family: "Roboto";
-    text-align: center;
-    line-height: 1.5;
-}
-#navbar{
-    font-family: "Roboto";
-    background-color: rgb(26,37, 58); 
-    overflow: hidden;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 20px;
-    display: flex;
-    height: 50px;
-}
-
-#navtitle {
-    margin-right: 20px;
-}
-
-ul{
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-#navbar li {
-    height: 100%;
-}
-
-#navbar a{
-    font-size: clamp(10px, 2.5vw, 13.5px);
-    height: 65%;
-    display: flex;
-    border: none;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #ecf0f1;
-    margin-top: 9px;
-    padding: 3px clamp(5px, 1.5vw, 13px);
-    transition: all 0.3s ease;
-    border-radius: 5px;
+.africa {
     position: relative;
-    overflow: hidden;
-    font-weight: 550;
-    position: sticky;
-    top: 0;
+    padding: 90px 40px 70px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 166, 0, 0.15);
 }
 
-#Celestial{
-    color: orange;
-    border: 1px solid rgb(64, 77, 100);
-    padding: 7px;
-    border-radius: 5px;
-    
-}
-
-#navtitle{
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-#icon{
-    margin-bottom: 1px;
-    margin-right: 8px;
-    font-size: 20px;
-}
-
-strong{
-    background:
-        linear-gradient(90deg, rgb(2, 120, 231), rgb(116, 0, 248));
-    -webkit-background-clip: text;
-    color:transparent;
-    
-}
-#navbar a:hover {
-    color: rgb(182, 176, 176);
-}
-
-#navbar a.active{
-    background-color: rgb(6, 12, 22);
-    opacity: 0.7;
-}
-
-#star{
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 70px auto 15px auto;
-}
-
-.round {
-    font-family: "Roboto";
-    color:#ecf0f1;
-    background-color: #1d293d;
-    box-shadow: 0 0 3px rgb(160, 137, 137);
-    border-radius: 40px;
-    height: 45px;
-    width: 200px;
-    margin-left: 38%;
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    margin-top: 30px;
-}
-
-.journey{
-    margin-top: 12px;
-}
-
-.plane{
-    margin-right: 10px;
-    margin-top: 9px;
-    width: 30px;
-    height: 30px;
-}
-
-.gem{
-    margin-right: 10px;
-    margin-top: 9px;
-    width: 30px;
-    height: 30px;
-}
-
-.gems{
-    margin-top: 12px;
-}
-
-.round2 {
-    font-family: "Roboto";
-    color:#ecf0f1;
-    background-color: #1d293d;
-    box-shadow: 0 0 3px rgb(160, 137, 137);
-    border-radius: 40px;
-    height: 45px;
-    width: 200px;
-    margin-left: 52%;
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    margin-top: -45px;
-}
-
-.start{
-    color: #808a8d;
-    margin-top: -20px;
-}
-
-.overlay_text1{
+.africa::before {
+    content: '';
     position: absolute;
-    color: rgb(255, 126, 6);
-    font-size: 15px;
-    font-weight: thin;
-    font-family: "Roboto";
-}
-hr{
-    border-color: rgb(255, 166, 0);
-    background-color: orange;
-    position: relative;
-    margin-top: -15px;
-    height: 2px;
-    width: 50px;
-    margin-left: 0px;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(204, 24, 24, 0.12) 0%, transparent 70%);
+    pointer-events: none;
 }
 
-.europe{
-    color: rgb(253, 182, 49);
+.destinationslabel {
+    font-family: "Roboto";
     font-size: 11px;
-    font-family: "Roboto";
-    margin-left: 10px;
+    letter-spacing: 4px;
+    color: rgba(255, 166, 0, 0.6);
+    margin-bottom: 12px;
 }
 
-.boximage2{
-    position: relative;
-    display: inline-block;
-    height: 250px; 
-    width: 500px;
-    padding-top: 30px;
-    padding-left: 40px;
-}
-  
-.zoom-image {
-    width: 500px;    
-    height: 250px;         
-    transition: transform 0.5s ease, opacity 0.5s ease; 
-    border-radius: 5px;
-    display: block;
-    opacity: 0.5;
-}
-  
-.zoom-image:hover {
-    transform: scale(1.2);
-    border-radius: 5px;
-    opacity: 1;
+.africatitle {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: clamp(52px, 10vw, 90px);
+    font-weight: 300;
+    letter-spacing: 8px;
+    background-image: linear-gradient(to right, #cc1818, #fffb00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 16px;
+    line-height: 1;
 }
 
-.flexbox{
+.africadestinations {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px 80px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 50px;
-    margin: 40px auto;
-    max-width: 1000px;
-    padding: 20px;
-    background:
-    linear-gradient(180deg, #100e15, #02133b);
-    border: 1px solid #021c3a;
-    border-radius: 8px;
-    color: orange;
 }
 
-
-.images{
-    width: 500px;
-    height: 250px;    
+.destinationcard,
+.destinationcard2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid rgba(255, 166, 0, 0.12);
+    border-radius: 10px;
     overflow: hidden;
+    background: linear-gradient(135deg, rgba(26, 37, 58, 0.8), rgba(9, 17, 36, 0.9));
+    transition: border-color 0.3s ease;
+}
+
+.destinationcard:hover,
+.destinationcard2:hover {
+    border-color: rgba(255, 166, 0, 0.35);
+}
+
+.destinationcard2 {
+    direction: rtl;
+}
+
+.destinationcard2 > * {
+    direction: ltr;
+}
+
+.image {
     position: relative;
+    overflow: hidden;
+    min-height: 320px;
 }
 
-.continent{
-    font-size: 10px;
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.75;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.text{
-    max-width: 40%;
+.destinationcard:hover .image img,
+.destinationcard2:hover .image img {
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+.location {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
     font-family: "Roboto";
-    margin-top: -120px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 166, 0, 0.4);
+    padding: 4px 10px;
+    border-radius: 3px;
 }
 
-.booking {
-    display: inline-flex;
-    align-items: center;
-    color: #00eeff;
+.desc {
+    padding: 40px 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+.place {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 400;
+    letter-spacing: 4px;
+    background-image: linear-gradient(to right, #cc1818, #fffb00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.description {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+}
+
+.bookings {
+    font-family: "Roboto";
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgba(255, 166, 0, 0.8);
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 6px;
+    transition: color 0.2s ease;
+    display: inline-block;
+}
+
+.bookings:hover {
+    color: #ffaa00;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .destinationcard,
+    .destinationcard2 {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+    .image {
+        min-height: 220px;
+    }
+    .desc {
+        padding: 28px 24px;
+    }
+    .africa {
+        padding: 60px 24px 50px;
+    }
 }
