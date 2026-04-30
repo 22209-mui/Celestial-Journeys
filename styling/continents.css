@@ -1,4 +1,4 @@
-.africa {
+.africa, .asia, .europe, .oceania, .americas{
     position: relative;
     padding: 90px 40px 70px;
     text-align: center;
@@ -10,6 +10,38 @@
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse at 50% 0%, rgba(204, 24, 24, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.asia::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(192, 137, 34, 0.55) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.americas::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(200, 100, 20, 0.5) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.europe::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(20, 50, 130, 0.5) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.oceania::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(0, 160, 200, 0.5) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -42,6 +74,94 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+.asiatitle {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: clamp(52px, 10vw, 90px);
+    font-weight: 300;
+    letter-spacing: 8px;
+    background-image: linear-gradient(to right, #e74c3c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 16px;
+    line-height: 1;
+}
+
+.asiadestinationslabel {
+    font-family: "Roboto";
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #e74c3c;
+    margin-bottom: 12px;
+}
+
+.americastitle {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: clamp(52px, 10vw, 90px);
+    font-weight: 300;
+    letter-spacing: 8px;
+    background-image: linear-gradient(to right, #e8832a, #f5c518, #9b59b6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 16px;
+    line-height: 1;
+}
+
+.americasdestinationslabel {
+    font-family: "Roboto";
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #f5c518;
+    margin-bottom: 12px;
+}
+
+.europetitle {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: clamp(52px, 10vw, 90px);
+    font-weight: 300;
+    letter-spacing: 8px;
+    background-image: linear-gradient(to right, #1a3c8f, #a8b8d8, #e8e0d0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 16px;
+    line-height: 1;
+}
+
+.europedestinationslabel {
+    font-family: "Roboto";
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #a8b8d8;
+    margin-bottom: 12px;
+}
+
+.oceaniatitle {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: clamp(52px, 10vw, 90px);
+    font-weight: 300;
+    letter-spacing: 8px;
+    background-image: linear-gradient(to right, #00b4d8, #00f5d4, #90e0ef);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 16px;
+    line-height: 1;
+}
+
+.oceaniadestinationslabel {
+    font-family: "Roboto";
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #00f5d4;
+    margin-bottom: 12px;
 }
 
 .destinationcard,
