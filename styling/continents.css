@@ -251,18 +251,37 @@
     gap: 14px;
 }
 
-.place {
+.africaplace, .americasplace, .asiaplace, .europeplace, .oceaniaplace {
     font-family: "Cormorant Garamond", "Times New Roman", serif;
     font-size: clamp(28px, 4vw, 42px);
     font-weight: 400;
     letter-spacing: 4px;
-    background-image: linear-gradient(to right, #cc1818, #fffb00);
+    margin: 0;
+    line-height: 1.1;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    margin: 0;
-    line-height: 1.1;
+}
+
+.africaplace {
+    background-image: linear-gradient(to right, #cc1818, #fffb00);
+}
+
+.americasplace {
+    background-image: linear-gradient(to right, #e8832a, #f5c518, #9b59b6);
+}
+
+.asiaplace {
+    background-image: linear-gradient(to right, #e74c3c, #e28c1a );
+}
+
+.oceaniaplace {
+    background-image: linear-gradient(to right, #00b4d8, #00f5d4, #90e0ef);
+}
+
+.europeplace {
+    background-image: linear-gradient(to right, #1a3c8f, #a8b8d8, #e8e0d0);
 }
 
 .description {
