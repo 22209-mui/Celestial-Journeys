@@ -107,14 +107,14 @@ ul {
 #hamburger img {
     width: 24px;
     height: 24px;
-    filter: invert(1);
+    filter: sepia(1) saturate(20) hue-rotate(340deg);
 }
 
 #hamburgermenu {
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 20px;
-    z-index: 998;
+    z-index: 1000;
     width: 180px;
     background-color: rgb(26, 37, 58);
     border: 1px solid rgba(255,255,255,0.1);
