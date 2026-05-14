@@ -1,3 +1,8 @@
+<!-- South/North America page for Celestial Journeys showing 2 destinations with a description
+     File: Americas.html
+     Author: Marcus Yap
+     Date: May 2026 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +21,15 @@
 </head>
 <body>
 
+<!-- Navigation bar including one for PC and mobile. -->
 <nav id="navbar">
+
+    <!-- Small title at the top left showing Celestial Journeys-->
     <div id="navtitle">
         <span id="Celestial">Celestial Journeys</span>
     </div>
+
+    <!-- Links for the navigation bar -->
     <ul id="links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="../html/Africa.html">Africa</a></li>
@@ -27,11 +37,15 @@
         <li><a href="../html/Europe.html">Europe</a></li>
         <li><a href="../html/Americas.html" class="active">Americas</a></li>
         <li><a href="../html/Oceania.html">Oceania</a></li>
-    </ul>
+    </ul>\
+
+    <!-- Button/icon used to open the hamburger menu for mobile -->
     <button id="hamburger">
         <img id="menu-icon" src="../assets/menu.svg" alt="open">
     </button>
 </nav>
+
+<!-- Links for the hamburger menu -->
 <div id="hamburgermenu">
     <a href="../index.html">Home</a>
     <a href="../html/Africa.html">Africa</a>
@@ -40,24 +54,33 @@
     <a href="../html/Americas.html">Americas</a>
     <a href="../html/Oceania.html">Oceania</a>
 </div>
+
+<!-- Title of page with a small 'destinations' text above it -->
 <div class="americas">
     <div>
         <p class="americasdestinationslabel">DESTINATIONS</p>
         <h1 class="americastitle">THE AMERICAS</h1>
     </div>
 </div>
+
+<!-- Destination box/card with an image of each place, the location and description of it. -->
 <div class="africadestinations">
+
+    <!-- First destination -->
     <div class="destinationcard">
         <div class="image">
             <img src="../assets/Americas/lasvegas.jpg" alt="Las Vegas">
             <div class="location">USA</div>
         </div>
+
+        <!-- All place descriptions were created using AI -->
         <div class="desc">
             <h2 class="americasplace">LAS VEGAS</h2>
             <p class="description">Rising improbably from the Mojave Desert, Las Vegas is the world's ultimate entertainment capital. The famed Strip dazzles with mega-resort casinos, Cirque du Soleil (famous circus) spectaculars, and world-class restaurants helmed by celebrity chefs. Beyond the neon, explore the raw grandeur of Red Rock Canyon and the Hoover Dam. Whether you come for the shows, the tables, the pools, or the sheer spectacle, Las Vegas never fails to astonish.</p>
         </div>
     </div>
 
+    <!-- Second destination -->
     <div class="destinationcard2">
         <div class="image">
             <img src="../assets/Americas/machupicchu.png" alt="Machu Picchu">
@@ -69,6 +92,8 @@
         </div>
     </div>
 </div>
+
+<!-- Three column footer of about, the title and a link to an external booking site. -->      
 <footer>
     <div class="inner">
         <div class="grid">
@@ -83,6 +108,7 @@
             <div class="columns">
                 <p class="footerheading">PLAN YOUR TRIP</p>
                 <a href="https://www.expedia.co.nz" class="footerlink" target="_blank">BOOK NOW</a>
+
                 <!-- target="_blank" opens the link in a new tab instead of closing my website -->
             </div>
         </div>
