@@ -1,3 +1,4 @@
+/* Full page dark gradient background and fixed so it doesn't repeat when scrolling*/
 body {
     background: linear-gradient(180deg, #140e15, #091124);
     min-height: 100vh;
@@ -8,6 +9,7 @@ body {
     z-index: -1;
 }
 
+/* Main page title */
 .celestiall, h1 {
     text-align: center;
     font-family: "Cormorant Garamond", "Times New Roman", serif;
@@ -28,6 +30,7 @@ body {
     line-height: 1.5;
 }
 
+/* Sticky navbar that stays at the top of the screen when scrolling down */
 #navbar {
     font-family: "Roboto";
     background-color: rgb(26, 37, 58);
@@ -88,11 +91,13 @@ ul {
     color: rgb(200, 200, 200);
 }
 
+/* Highlights the current page link in navbar */
 #navbar a.active {
     background-color: rgb(6, 12, 22);
     opacity: 0.7;
 }
 
+/* Hambuger menu button that is on the far right of the navbar, mainly for mobile */
 #hamburger {
     display: flex;
     align-items: center;
@@ -104,12 +109,14 @@ ul {
     flex-shrink: 0;
 }
 
+/* The filter colours the icon to orange */
 #hamburger img {
     width: 24px;
     height: 24px;
     filter: sepia(1) saturate(20) hue-rotate(340deg);
 }
 
+/* Mobile hamburger menu that is hidden until you click the icon (with JS) */
 #hamburgermenu {
     position: fixed;
     top: 50px;
@@ -146,6 +153,7 @@ ul {
     background: rgba(255, 255, 255, 0.06);
 }
 
+/* Hides the usual navbar links on mobile */
 @media (max-width: 768px) {
     #links {
         display: none;
@@ -178,6 +186,7 @@ strong {
     opacity: 0.7;
 }
 
+/* Star logo on homepage */
 #star {
     width: clamp(30px, 10vw, 50px);
     height: clamp(30px, 10vw, 50px);
@@ -282,31 +291,7 @@ strong {
     position: relative;
 }
 
-.textoverlay{
-    position: absolute;
-    color: orange;
-    font-family: "Roboto";
-    font-weight: 300;
-    bottom: 10px;
-    left: 10px;
-    opacity: 1;
-    transition: opacity 0.5s ease;
-}
-
-.images:hover .textoverlay {
-    opacity: 0;
-}
-
-.textoverlay h3 {
-    margin: 0;
-    font-size: clamp(16px, 4vw, 22px);
-}
-
-.textoverlay h4 {
-    margin: 0;
-    font-size: clamp(10px, 2.5vw, 14px);
-}
-
+/* Carousel with a fixed width and it is centred on the home page*/
 .carousel {
     position: relative;
     width: 530px;
@@ -339,6 +324,7 @@ strong {
     overflow: hidden;
 }
 
+/* Dark gradient overlay for carousel captions */
 .carousel-inner::after {
     content: '';
     position: absolute;
@@ -351,6 +337,7 @@ strong {
     z-index: 1;
 }
 
+/* Caption is at the top of the carousel image */
 .carousel-caption{
     top: -10px;
     bottom: auto;
@@ -402,6 +389,7 @@ footer{
     gap: 20px;
 }
 
+/* Footer brand thing with the same gradient as the title */
 .logoo {
     font-family: "Cormorant Garamond", "Times New Roman", serif;
     font-size: clamp(16px, 3vw, 24px);
@@ -422,6 +410,7 @@ footer{
     margin: 6px 0 0;
 }
 
+/* Small line between footer and homepage */
 .copy{
     width: 40px;
     height: 1px;
@@ -443,6 +432,7 @@ footer{
     margin: 30px auto;
 }
 
+/* Three column footer grid with the middle column being wider for the website name to stand out */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
@@ -495,6 +485,7 @@ footer{
     }
 }
 
+/* Centres the middle column for the footer */
 #alignment{
     align-items: center;
     text-align: center;
@@ -510,6 +501,7 @@ footer{
     text-align: center;
 }
 
+/* Brings the other two footer columns down to align with the brand name*/
 .grid .columns:first-child,
 .grid .columns:last-child {
     padding-top: 8px;

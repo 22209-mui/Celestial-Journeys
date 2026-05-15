@@ -1,9 +1,11 @@
+/* Shared styling for all continents pages */
 .africa, .asia, .europe, .oceania, .americas{
     position: relative;
     padding: 90px 40px 70px;
     text-align: center;
 }
 
+/* Coloured bottom border based on each continent*/
 .africa {
     border-bottom: 1px solid rgba(204, 24, 24, 0.3);
 }
@@ -24,6 +26,7 @@
     border-bottom: 1px solid rgba(0, 180, 216, 0.35);
 }
 
+/* Glow effect at the top of each continent page */
 .africa::before {
     content: '';
     position: absolute;
@@ -72,6 +75,7 @@
     margin-bottom: 12px;
 }
 
+/* Continent page titles. Each one has a unique gradient to relate to the continent. */
 .africatitle {
     font-family: "Cormorant Garamond", "Times New Roman", serif;
     font-size: clamp(52px, 10vw, 90px);
@@ -86,6 +90,7 @@
     line-height: 1;
 }
 
+/* Centred container for destination cards */
 .africadestinations {
     max-width: 1100px;
     margin: 0 auto;
@@ -183,6 +188,7 @@
     margin-bottom: 12px;
 }
 
+/* Side by side image and text layout using grid. The destinationcard2 one using direction: rtl to flip the layout to the right side */
 .destinationcard,
 .destinationcard2 {
     display: grid;
@@ -195,6 +201,7 @@
     transition: border-color 0.3s ease;
 }
 
+/* Makes the border glow on hover */
 .destinationcard:hover,
 .destinationcard2:hover {
     border-color: rgba(255, 166, 0, 0.35);
@@ -204,6 +211,7 @@
     direction: rtl;
 }
 
+/* Reverts the text direction for the description in the second destination card */
 .destinationcard2 > * {
     direction: ltr;
 }
@@ -223,12 +231,14 @@
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+/* Image gets brighter and zooms in slightly on hover*/
 .destinationcard:hover .image img,
 .destinationcard2:hover .image img {
     opacity: 1;
     transform: scale(1.04);
 }
 
+/* Small location box on bottom left of each place image to make it more readable*/
 .location {
     position: absolute;
     bottom: 14px;
@@ -251,6 +261,7 @@
     gap: 14px;
 }
 
+/* Place names and headings with shared styles except for the colour */
 .africaplace, .americasplace, .asiaplace, .europeplace, .oceaniaplace {
     font-family: "Cormorant Garamond", "Times New Roman", serif;
     font-size: clamp(28px, 4vw, 42px);
@@ -308,6 +319,7 @@
     text-decoration: none;
 }
 
+/* Stacks the image above the text and reduces padding in mobile */
 @media (max-width: 768px) {
     .destinationcard,
     .destinationcard2 {
