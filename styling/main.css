@@ -1,3 +1,11 @@
+/* ================================================
+    Stylesheet mainly for the index.html homepage.
+    Also has some styles for the other pages.
+    Author: Marcus Yap
+    File:   main.css
+    Date:   March 2026
+   ================================================ */
+
 /* Full page dark gradient background and fixed so it doesn't repeat when scrolling*/
 body {
     background: linear-gradient(180deg, #140e15, #091124);

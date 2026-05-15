@@ -1,4 +1,10 @@
-/* Shared styling for all continents pages */
+/* ================================================
+    Style sheet for the five continent pages 
+    (Africa, Asia, Europe, Americas, Oceania). 
+    Author: Marcus Yap
+    File:   continents.css
+    Date:   May 2026
+   ================================================ */
 .africa, .asia, .europe, .oceania, .americas{
     position: relative;
     padding: 90px 40px 70px;
