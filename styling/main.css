@@ -353,7 +353,7 @@ strong {
     z-index: 2;
 }
 
-.carousel-caption h5 {
+.carousel-caption h3 {
     font-family: "Times New Roman";
     font-size: clamp(18px, 4vw, 26px);
     font-weight: 300;
